@@ -5,33 +5,16 @@
   overflow-x: hidden;
 }
 
-
 header {
   position: relative;
   text-align: center;
-  /* height: 200px; */
-  height: 100vh;
-  width: 100vw;
-}
+  background-image: url("./images/header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 
-header img {
-  /* アスペクト比を維持して要素全体に表示されるように拡大縮小。 */
-  object-fit: cover;
-
-  height: 100vh;
+  height: 400px;
   width: 100%;
-}
-
-header .blur {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  width: 70%;
-  height: 200px;
 }
 
 h1.header-name {
@@ -45,17 +28,30 @@ h1.header-name {
 
 div.main-contents {
   text-align: center;
-  color: #555555;
-  margin-bottom: 100px;
+
+  background-image: url("./images/header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding-bottom: 100px;
 }
 
 div.main-contents h2 {
-  margin: 20px 0;
+  margin: 100px 0 10px 0;
 }
 
-div.main-contents h2:nth-child(1) {
-  margin: 50px 0 20px 0;
+div.main-contents .text-area {
+  backdrop-filter: blur(5px) contrast(100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #313131;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+  width: 70vw;
+  border-radius: 10px;
 }
+
+
 
 div.main-contents li {
   margin-top: 8px;
