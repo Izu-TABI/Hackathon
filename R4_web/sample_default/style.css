@@ -1,0 +1,25 @@
+* {
+  /* デフォルトのpaddingやmarginを0にする */
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  /* header内の文字や画像に対して、水平方向の揃え方を指定する。　今回の場合は中央揃え*/
+  text-align: center;
+}
+
+h1.header-name {
+  margin-top: 100px;
+  font-size: 45px;
+}
+
+div.main-contents {
+  /* main-contentsの文字や画像に対して、水平方向の揃え方を指定する。　今回の場合は中央揃え*/
+  text-align: center;
+}
+
+div.main-contents h2 {
+  /* 上 | 右 | 下 | 左 */
+  margin: 100px 0 10px 0;
+}
